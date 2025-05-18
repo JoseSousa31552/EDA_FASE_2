@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Struct Name="Vertice">
+    <Position X="3" Y="1.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEAAIAhAAAAAQAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>STRUCT.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="ADJ">
+    <Position X="5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAAAAAAAAAAAAAAAAACABAAAAAEAAAA=</HashCode>
+      <FileName>STRUCT.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Graph">
+    <Position X="6.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAA=</HashCode>
+      <FileName>STRUCT.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

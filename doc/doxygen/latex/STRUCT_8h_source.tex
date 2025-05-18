@@ -1,0 +1,50 @@
+\doxysection{/home/m800/\+EDA\+\_\+\+FASE\+\_\+2\+\_\+\+FINAL/\+STRUCT.h}
+\hypertarget{STRUCT_8h_source}{}\label{STRUCT_8h_source}\mbox{\hyperlink{STRUCT_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{comment}{/*****************************************************************/}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <stdio.h>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <string.h>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <malloc.h>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <stdlib.h>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <stdbool.h>}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#define\ MAX\_CAMINHO\ 10000}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#define\ MAX\ 1000}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#pragma\ warning(disable\ :\ 4996)}}
+\DoxyCodeLine{00018\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{int}\ MAX\_COLUNAS;}
+\DoxyCodeLine{00019\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{int}\ MAX\_LINHAS;}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structVertice}{Vertice}}\ \{}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{char}\ frequencia;}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{int}\ linha;}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{int}\ coluna;}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{bool}\ visitado;}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structVertice}{Vertice}}*\ next;}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structADJ}{ADJ}}*\ adnext;}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \}\mbox{\hyperlink{structVertice}{Vertice}};}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structADJ}{ADJ}}\ \{}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{char}\ freque;\ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{int}\ l;\ }
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{int}\ c;\ }
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structADJ}{ADJ}}*\ prox;}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \}\mbox{\hyperlink{structADJ}{ADJ}};}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structGraph}{Graph}}\ \{}
+\DoxyCodeLine{00042\ \ \ \ \ \mbox{\hyperlink{structVertice}{Vertice}}*\ InicioGraph;\ \ \ \ }
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{int}\ NumeroVertices;\ \ \ \ \ }
+\DoxyCodeLine{00044\ \}\mbox{\hyperlink{structGraph}{Graph}};}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ }
+
+\end{DoxyCode}

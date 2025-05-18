@@ -1,0 +1,59 @@
+\doxysection{/home/m800/\+EDA\+\_\+\+FASE\+\_\+2\+\_\+\+FINAL/\+Assinaturas.h}
+\hypertarget{Assinaturas_8h_source}{}\label{Assinaturas_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#include\ <stdio.h>}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <string.h>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <malloc.h>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <stdlib.h>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <stdbool.h>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{STRUCT_8h}{STRUCT.h}}"{}}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \mbox{\hyperlink{structVertice}{Vertice}}*\ CriarVertice(\textcolor{keywordtype}{char}\ frequencia,\ \textcolor{keywordtype}{int}\ linha,\ \textcolor{keywordtype}{int}\ coluna);}
+\DoxyCodeLine{00009\ \mbox{\hyperlink{structVertice}{Vertice}}*\ CarregarAntenasDoFicheiro(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ nome\_ficheiro);}
+\DoxyCodeLine{00010\ \textcolor{keywordtype}{bool}\ ExisteVertice(\mbox{\hyperlink{structVertice}{Vertice}}*\ inicio,\ \textcolor{keywordtype}{int}\ l,\ \textcolor{keywordtype}{int}\ c);}
+\DoxyCodeLine{00011\ \mbox{\hyperlink{structVertice}{Vertice}}*\ ProcurarVertice(\mbox{\hyperlink{structVertice}{Vertice}}*\ h,\ \textcolor{keywordtype}{int}\ l,\ \textcolor{keywordtype}{int}\ c);}
+\DoxyCodeLine{00012\ \mbox{\hyperlink{structVertice}{Vertice}}*\ InsereOrdenado(\mbox{\hyperlink{structVertice}{Vertice}}*\ inicio,\ \mbox{\hyperlink{structVertice}{Vertice}}*\ novo,\ \textcolor{keywordtype}{bool}*\ res);}
+\DoxyCodeLine{00013\ \textcolor{keywordtype}{void}\ ShowGraph(\mbox{\hyperlink{structVertice}{Vertice}}*\ graph);}
+\DoxyCodeLine{00014\ \mbox{\hyperlink{structVertice}{Vertice}}*\ RemoverVertice(\mbox{\hyperlink{structVertice}{Vertice}}*\ h,\ \textcolor{keywordtype}{int}\ linha,\ \textcolor{keywordtype}{int}\ coluna,\ \textcolor{keywordtype}{bool}*\ res);}
+\DoxyCodeLine{00015\ \mbox{\hyperlink{structVertice}{Vertice}}*\ LibertarVertice(\mbox{\hyperlink{structVertice}{Vertice}}*\ lista);}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \mbox{\hyperlink{structADJ}{ADJ}}*\ CriaAdj(\textcolor{keywordtype}{char}\ frequencia,\ \textcolor{keywordtype}{int}\ linha,\ \textcolor{keywordtype}{int}\ coluna);}
+\DoxyCodeLine{00019\ \mbox{\hyperlink{structADJ}{ADJ}}*\ InsereAdj(\mbox{\hyperlink{structADJ}{ADJ}}*\ ListaAdja,\ \textcolor{keywordtype}{int}\ l,\ \textcolor{keywordtype}{int}\ c,\ \textcolor{keywordtype}{char}\ frequencia);}
+\DoxyCodeLine{00020\ \textcolor{keywordtype}{bool}\ ConstruirAdjacencias(\mbox{\hyperlink{structVertice}{Vertice}}*\ lista);}
+\DoxyCodeLine{00021\ \textcolor{keywordtype}{bool}\ ConstruirAdjacenciasTodas(\mbox{\hyperlink{structVertice}{Vertice}}*\ lista);}
+\DoxyCodeLine{00022\ \textcolor{keywordtype}{void}\ ApagaADJ(\mbox{\hyperlink{structADJ}{ADJ}}*\ AdjacenciaApag);}
+\DoxyCodeLine{00023\ \mbox{\hyperlink{structADJ}{ADJ}}*\ ElimiminaAdj(\mbox{\hyperlink{structADJ}{ADJ}}*\ ListAdj,\ \textcolor{keywordtype}{int}\ l,\ \textcolor{keywordtype}{int}\ c,\ \textcolor{keywordtype}{bool}*\ res);}
+\DoxyCodeLine{00024\ \mbox{\hyperlink{structADJ}{ADJ}}*\ ElimiminaAllAdj(\mbox{\hyperlink{structADJ}{ADJ}}*\ listAdj,\ \textcolor{keywordtype}{bool}*\ res);}
+\DoxyCodeLine{00025\ \mbox{\hyperlink{structVertice}{Vertice}}*\ RemoverAdjacenciasParaVertice(\mbox{\hyperlink{structVertice}{Vertice}}*\ lista,\ \textcolor{keywordtype}{int}\ linha,\ \textcolor{keywordtype}{int}\ coluna,\ \textcolor{keywordtype}{bool}*\ res);}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \mbox{\hyperlink{structGraph}{Graph}}*\ CriaGraph();}
+\DoxyCodeLine{00029\ \mbox{\hyperlink{structGraph}{Graph}}*\ InsereVerticeGraph(\mbox{\hyperlink{structGraph}{Graph}}*\ h,\ \mbox{\hyperlink{structVertice}{Vertice}}*\ novo,\ \textcolor{keywordtype}{bool}*\ res);}
+\DoxyCodeLine{00030\ \mbox{\hyperlink{structGraph}{Graph}}*\ InsereAdjGraph(\mbox{\hyperlink{structGraph}{Graph}}*\ h,\ \textcolor{keywordtype}{int}\ lOrigem,\ \textcolor{keywordtype}{int}\ cOrigem,\ \textcolor{keywordtype}{int}\ lDestino,\ \textcolor{keywordtype}{int}\ cDestino,\ \textcolor{keywordtype}{bool}*\ res);}
+\DoxyCodeLine{00031\ \mbox{\hyperlink{structGraph}{Graph}}*\ EliminaAdjGraph(\mbox{\hyperlink{structGraph}{Graph}}*\ g,\ \textcolor{keywordtype}{int}\ linhaOrigem,\ \textcolor{keywordtype}{int}\ colunaOrigem,\ \textcolor{keywordtype}{int}\ linhaDestino,\ \textcolor{keywordtype}{int}\ colunaDestino,\ \textcolor{keywordtype}{bool}*\ res);}
+\DoxyCodeLine{00032\ \mbox{\hyperlink{structVertice}{Vertice}}*\ OndeEstaVerticeGraph(\mbox{\hyperlink{structGraph}{Graph}}*\ g,\ \textcolor{keywordtype}{int}\ linha,\ \textcolor{keywordtype}{int}\ coluna);}
+\DoxyCodeLine{00033\ \textcolor{keywordtype}{bool}\ ExisteVerticeGraph(\mbox{\hyperlink{structGraph}{Graph}}*\ g,\ \textcolor{keywordtype}{int}\ linha,\ \textcolor{keywordtype}{int}\ coluna);}
+\DoxyCodeLine{00034\ \mbox{\hyperlink{structGraph}{Graph}}*\ EliminaVerticeGraph(\mbox{\hyperlink{structGraph}{Graph}}*\ g,\ \textcolor{keywordtype}{int}\ linha,\ \textcolor{keywordtype}{int}\ coluna,\ \textcolor{keywordtype}{bool}*\ res);}
+\DoxyCodeLine{00035\ \textcolor{keywordtype}{void}\ ShowGaphLA(\mbox{\hyperlink{structGraph}{Graph}}*\ g);}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \textcolor{keywordtype}{bool}\ InserirQueue(\textcolor{keywordtype}{int}\ fila[],\ \textcolor{keywordtype}{int}*\ fim,\ \textcolor{keywordtype}{int}\ valor);}
+\DoxyCodeLine{00038\ \textcolor{keywordtype}{int}\ RemoverQueue(\textcolor{keywordtype}{int}\ fila[],\ \textcolor{keywordtype}{int}*\ inicio);}
+\DoxyCodeLine{00039\ \textcolor{keywordtype}{bool}\ VaziaQueue(\textcolor{keywordtype}{int}\ fim,\ \textcolor{keywordtype}{int}\ inicio);}
+\DoxyCodeLine{00040\ \textcolor{keywordtype}{void}\ ApanhaVertice(\mbox{\hyperlink{structVertice}{Vertice}}*\ v);}
+\DoxyCodeLine{00041\ \textcolor{keywordtype}{bool}\ BreadthFirstTraversalLA(\mbox{\hyperlink{structGraph}{Graph}}*\ g,\ \textcolor{keywordtype}{int}\ linhan,\ \textcolor{keywordtype}{int}\ colunan);}
+\DoxyCodeLine{00042\ \mbox{\hyperlink{structVertice}{Vertice}}*\ ResetVertices(\mbox{\hyperlink{structVertice}{Vertice}}*\ inicio);}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \textcolor{keywordtype}{bool}\ isStackEmpty(\textcolor{keywordtype}{int}\ top);}
+\DoxyCodeLine{00045\ \textcolor{keywordtype}{bool}\ push(\textcolor{keywordtype}{int}\ stack[],\ \textcolor{keywordtype}{int}*\ top,\ \textcolor{keywordtype}{int}\ valor);}
+\DoxyCodeLine{00046\ \textcolor{keywordtype}{int}\ pop(\textcolor{keywordtype}{int}\ stack[],\ \textcolor{keywordtype}{int}*\ top);}
+\DoxyCodeLine{00047\ \mbox{\hyperlink{structVertice}{Vertice}}*\ GetAdjNaoVisitado(\mbox{\hyperlink{structVertice}{Vertice}}*\ lstVertices,\ \textcolor{keywordtype}{int}\ linha,\ \textcolor{keywordtype}{int}\ coluna);}
+\DoxyCodeLine{00048\ \textcolor{keywordtype}{bool}\ DepthFirstTraversal(\mbox{\hyperlink{structGraph}{Graph}}*\ g,\ \textcolor{keywordtype}{int}\ linOrigem,\ \textcolor{keywordtype}{int}\ colOrigem);}
+\DoxyCodeLine{00049\ \textcolor{keywordtype}{void}\ ImprimirCaminho(\textcolor{keywordtype}{int}*\ linhas,\ \textcolor{keywordtype}{int}*\ colunas,\ \textcolor{keywordtype}{int}\ tamanho);}
+\DoxyCodeLine{00050\ \textcolor{keywordtype}{bool}\ \ MostrarTodosCaminhosDFS(\mbox{\hyperlink{structGraph}{Graph}}*\ g,\ \mbox{\hyperlink{structVertice}{Vertice}}*\ atual,\ \mbox{\hyperlink{structVertice}{Vertice}}*\ destino,\ \textcolor{keywordtype}{int}*\ caminhoLinhas,\ \textcolor{keywordtype}{int}*\ caminhoColunas,\ \textcolor{keywordtype}{int}\ profundidade);}
+\DoxyCodeLine{00051\ \textcolor{keywordtype}{bool}\ ProcurarTodosOsCaminhos(\mbox{\hyperlink{structGraph}{Graph}}*\ g,\ \textcolor{keywordtype}{int}\ linOrigem,\ \textcolor{keywordtype}{int}\ colOrigem,\ \textcolor{keywordtype}{int}\ linDestino,\ \textcolor{keywordtype}{int}\ colDestino);}
+\DoxyCodeLine{00052\ \textcolor{keywordtype}{void}\ CalcularInterferenciasAB(\mbox{\hyperlink{structGraph}{Graph}}*\ grafo,\ \textcolor{keywordtype}{char}\ freqA,\ \textcolor{keywordtype}{char}\ freqB);}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ }
+
+\end{DoxyCode}

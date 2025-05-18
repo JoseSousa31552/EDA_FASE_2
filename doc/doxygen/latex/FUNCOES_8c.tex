@@ -1,0 +1,832 @@
+\doxysection{/home/m800/\+EDA\+\_\+\+FASE\+\_\+2\+\_\+\+FINAL/\+FUNCOES.c File Reference}
+\hypertarget{FUNCOES_8c}{}\label{FUNCOES_8c}\index{/home/m800/EDA\_FASE\_2\_FINAL/FUNCOES.c@{/home/m800/EDA\_FASE\_2\_FINAL/FUNCOES.c}}
+{\ttfamily \#include "{}STRUCT.\+H"{}}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$malloc.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+Include dependency graph for FUNCOES.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{FUNCOES_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{FUNCOES_8c_a3f7b7bd792e6c29587eb3d6c70d80f83}{Criar\+Vertice}} (char frequencia, int linha, int coluna)
+\item 
+\mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{FUNCOES_8c_acd0ef08dc995366a5180d0ea1b5a2e37}{Carregar\+Antenas\+Do\+Ficheiro}} (const char \texorpdfstring{$\ast$}{*}nome\+\_\+ficheiro)
+\item 
+bool \mbox{\hyperlink{FUNCOES_8c_a17d6177ff8193466f37a8beca3fd22a8}{Existe\+Vertice}} (\mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*}inicio, int l, int c)
+\item 
+\mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{FUNCOES_8c_a557ff643442ae887a3b59e48c13c9a7d}{Procurar\+Vertice}} (\mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*}h, int l, int c)
+\item 
+\mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{FUNCOES_8c_ac1e332654122dc9f40ad2991fc484880}{Insere\+Ordenado}} (\mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*}inicio, \mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*}novo, bool \texorpdfstring{$\ast$}{*}res)
+\item 
+void \mbox{\hyperlink{FUNCOES_8c_a025650ea215fbf8f81dc5a203aac7a95}{Apaga\+ADJ}} (\mbox{\hyperlink{structADJ}{ADJ}} \texorpdfstring{$\ast$}{*}Adjacencia\+Apag)
+\item 
+\mbox{\hyperlink{structADJ}{ADJ}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{FUNCOES_8c_a4fbdcb09b18b348a84aa68ca6d17b3e4}{Elimimina\+Adj}} (\mbox{\hyperlink{structADJ}{ADJ}} \texorpdfstring{$\ast$}{*}List\+Adj, int l, int c, bool \texorpdfstring{$\ast$}{*}res)
+\item 
+\mbox{\hyperlink{structADJ}{ADJ}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{FUNCOES_8c_ae74ba8b7ab2afbdab5aeb86d2df3d725}{Elimimina\+All\+Adj}} (\mbox{\hyperlink{structADJ}{ADJ}} \texorpdfstring{$\ast$}{*}list\+Adj, bool \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Apaga todas as adjacências de uma LA. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{FUNCOES_8c_a0cbc4c7412847084d7f6d965d1f3be1a}{Remover\+Adjacencias\+Para\+Vertice}} (\mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*}lista, int linha, int coluna, bool \texorpdfstring{$\ast$}{*}res)
+\item 
+\mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{FUNCOES_8c_aaea34f0ff5b80c3efe14a9c588b07a2c}{Remover\+Vertice}} (\mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*}h, int linha, int coluna, bool \texorpdfstring{$\ast$}{*}res)
+\item 
+\mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{FUNCOES_8c_a4b53637ccedf6e29d032d83bc7b1006c}{Libertar\+Vertice}} (\mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*}lista)
+\item 
+\Hypertarget{FUNCOES_8c_a8fb0c183a9606b08221d4066222d2c96}\label{FUNCOES_8c_a8fb0c183a9606b08221d4066222d2c96} 
+void {\bfseries Show\+Graph} (\mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*}graph)
+\item 
+\mbox{\hyperlink{structADJ}{ADJ}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{FUNCOES_8c_aa0485896a86041d67e72a7c584c7bf25}{Cria\+Adj}} (char frequencia, int linha, int coluna)
+\item 
+\mbox{\hyperlink{structADJ}{ADJ}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{FUNCOES_8c_a6db71872ea7e979fd757a7146c67549a}{Insere\+Adj}} (\mbox{\hyperlink{structADJ}{ADJ}} \texorpdfstring{$\ast$}{*}Lista\+Adja, int l, int c, char frequencia)
+\item 
+bool \mbox{\hyperlink{FUNCOES_8c_a9954d414e2b3e9f65807b0dd5930fb40}{Construir\+Adjacencias}} (\mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*}lista)
+\item 
+bool \mbox{\hyperlink{FUNCOES_8c_ad367dd6d205862329a259bd03d04bf6f}{Construir\+Adjacencias\+Todas}} (\mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*}lista)
+\item 
+\mbox{\hyperlink{structGraph}{Graph}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{FUNCOES_8c_a26004b979ab4dc58f1d9ef06781bc3b9}{Cria\+Graph}} ()
+\item 
+\mbox{\hyperlink{structGraph}{Graph}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{FUNCOES_8c_ab64cbd01e6b5a3090ad1afd7d3b89002}{Insere\+Vertice\+Graph}} (\mbox{\hyperlink{structGraph}{Graph}} \texorpdfstring{$\ast$}{*}h, \mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*}novo, bool \texorpdfstring{$\ast$}{*}res)
+\item 
+\mbox{\hyperlink{structGraph}{Graph}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{FUNCOES_8c_ac14ec9deef87cece7a1361cb76f1926d}{Insere\+Adj\+Graph}} (\mbox{\hyperlink{structGraph}{Graph}} \texorpdfstring{$\ast$}{*}h, int l\+Origem, int c\+Origem, int l\+Destino, int c\+Destino, bool \texorpdfstring{$\ast$}{*}res)
+\item 
+\mbox{\hyperlink{structGraph}{Graph}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{FUNCOES_8c_a199f12e69647b0a05abf5b8f1f33ce5a}{Elimina\+Adj\+Graph}} (\mbox{\hyperlink{structGraph}{Graph}} \texorpdfstring{$\ast$}{*}g, int linha\+Origem, int coluna\+Origem, int linha\+Destino, int coluna\+Destino, bool \texorpdfstring{$\ast$}{*}res)
+\item 
+\mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{FUNCOES_8c_ac89dc1ee0f335868ad393635700fa839}{Onde\+Esta\+Vertice\+Graph}} (\mbox{\hyperlink{structGraph}{Graph}} \texorpdfstring{$\ast$}{*}g, int linha, int coluna)
+\item 
+bool \mbox{\hyperlink{FUNCOES_8c_a6bda5069e40944302fd60a896d2498a3}{Existe\+Vertice\+Graph}} (\mbox{\hyperlink{structGraph}{Graph}} \texorpdfstring{$\ast$}{*}g, int linha, int coluna)
+\item 
+\mbox{\hyperlink{structGraph}{Graph}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{FUNCOES_8c_a26dd199298ccb2446e856b30102ae410}{Elimina\+Vertice\+Graph}} (\mbox{\hyperlink{structGraph}{Graph}} \texorpdfstring{$\ast$}{*}g, int linha, int coluna, bool \texorpdfstring{$\ast$}{*}res)
+\begin{DoxyCompactList}\small\item\em Apaga vertice de um grafo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{FUNCOES_8c_a3505b1cf3629dce257e6a3f127b29f96}{Show\+Gaph\+LA}} (\mbox{\hyperlink{structGraph}{Graph}} \texorpdfstring{$\ast$}{*}g)
+\item 
+bool \mbox{\hyperlink{FUNCOES_8c_ae9c5dae16bb2fbc3295cc71e254cb4d6}{Inserir\+Queue}} (int fila\mbox{[}$\,$\mbox{]}, int \texorpdfstring{$\ast$}{*}fim, int valor)
+\item 
+int \mbox{\hyperlink{FUNCOES_8c_a3bb7320a41039bab664edfbe21531253}{Remover\+Queue}} (int fila\mbox{[}$\,$\mbox{]}, int \texorpdfstring{$\ast$}{*}inicio)
+\item 
+bool \mbox{\hyperlink{FUNCOES_8c_ad9f93b8b9322212f51b720525966e5fe}{Vazia\+Queue}} (int fim, int inicio)
+\item 
+void \mbox{\hyperlink{FUNCOES_8c_a7be492a81e3fac51999d9ef5c1694a4c}{Apanha\+Vertice}} (\mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*}v)
+\item 
+bool \mbox{\hyperlink{FUNCOES_8c_a65ed7c17355b1c513c9da495590640de}{Breadth\+First\+Traversal\+LA}} (\mbox{\hyperlink{structGraph}{Graph}} \texorpdfstring{$\ast$}{*}g, int linhan, int colunan)
+\item 
+\mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{FUNCOES_8c_a20e08ea37c4e068e0697c30abe4a423d}{Reset\+Vertices}} (\mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*}inicio)
+\item 
+bool \mbox{\hyperlink{FUNCOES_8c_a4a259bfb9bfae4d9abb66d4117cf0177}{is\+Stack\+Empty}} (int top)
+\item 
+bool \mbox{\hyperlink{FUNCOES_8c_ad1b2bd7a454448095fd666007183f5d3}{push}} (int stack\mbox{[}$\,$\mbox{]}, int \texorpdfstring{$\ast$}{*}top, int valor)
+\item 
+int \mbox{\hyperlink{FUNCOES_8c_a8b39501d3c9e978e73aa20e06364e3f3}{pop}} (int stack\mbox{[}$\,$\mbox{]}, int \texorpdfstring{$\ast$}{*}top)
+\item 
+\mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{FUNCOES_8c_abe7a15bcf9eb62ab775ffd2614ef2436}{Get\+Adj\+Nao\+Visitado}} (\mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*}lst\+Vertices, int linha, int coluna)
+\item 
+bool \mbox{\hyperlink{FUNCOES_8c_abd242153b6ecbd6b50d3c3f46a7d6657}{Depth\+First\+Traversal}} (\mbox{\hyperlink{structGraph}{Graph}} \texorpdfstring{$\ast$}{*}g, int lin\+Origem, int col\+Origem)
+\item 
+void \mbox{\hyperlink{FUNCOES_8c_ae0d95c84a4c4d5744a267e3be2ab8525}{Imprimir\+Caminho}} (int \texorpdfstring{$\ast$}{*}linhas, int \texorpdfstring{$\ast$}{*}colunas, int tamanho)
+\item 
+bool \mbox{\hyperlink{FUNCOES_8c_abd69bf76d6128150f231f72ed3a2c0f7}{Mostrar\+Todos\+Caminhos\+DFS}} (\mbox{\hyperlink{structGraph}{Graph}} \texorpdfstring{$\ast$}{*}g, \mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*}atual, \mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*}destino, int \texorpdfstring{$\ast$}{*}caminho\+Linhas, int \texorpdfstring{$\ast$}{*}caminho\+Colunas, int profundidade)
+\item 
+bool \mbox{\hyperlink{FUNCOES_8c_ac260bd069c85cb6f527eb4aacbf89980}{Procurar\+Todos\+Os\+Caminhos}} (\mbox{\hyperlink{structGraph}{Graph}} \texorpdfstring{$\ast$}{*}g, int lin\+Origem, int col\+Origem, int lin\+Destino, int col\+Destino)
+\item 
+void \mbox{\hyperlink{FUNCOES_8c_a28f2ab5289cbd986d181af34d039a3ca}{Calcular\+Interferencias\+AB}} (\mbox{\hyperlink{structGraph}{Graph}} \texorpdfstring{$\ast$}{*}grafo, char freqA, char freqB)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{FUNCOES_8c_ac54f683a32aed3683eba985705dbfc8b}\label{FUNCOES_8c_ac54f683a32aed3683eba985705dbfc8b} 
+int {\bfseries MAX\+\_\+\+COLUNAS} = 0
+\item 
+\Hypertarget{FUNCOES_8c_a4877dd376e1cc9d30a57bcad8c77b094}\label{FUNCOES_8c_a4877dd376e1cc9d30a57bcad8c77b094} 
+int {\bfseries MAX\+\_\+\+LINHAS} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+José 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Maio 2025 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{FUNCOES_8c_a025650ea215fbf8f81dc5a203aac7a95}\label{FUNCOES_8c_a025650ea215fbf8f81dc5a203aac7a95} 
+\index{FUNCOES.c@{FUNCOES.c}!ApagaADJ@{ApagaADJ}}
+\index{ApagaADJ@{ApagaADJ}!FUNCOES.c@{FUNCOES.c}}
+\doxysubsubsection{\texorpdfstring{ApagaADJ()}{ApagaADJ()}}
+{\footnotesize\ttfamily void Apaga\+ADJ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structADJ}{ADJ}} \texorpdfstring{$\ast$}{*}}]{Adjacencia\+Apag }\end{DoxyParamCaption})}
+
+.Apaga a adjacencia
+
+
+\begin{DoxyParams}{Parameters}
+{\em Adjacencia\+Apag} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{FUNCOES_8c_a7be492a81e3fac51999d9ef5c1694a4c}\label{FUNCOES_8c_a7be492a81e3fac51999d9ef5c1694a4c} 
+\index{FUNCOES.c@{FUNCOES.c}!ApanhaVertice@{ApanhaVertice}}
+\index{ApanhaVertice@{ApanhaVertice}!FUNCOES.c@{FUNCOES.c}}
+\doxysubsubsection{\texorpdfstring{ApanhaVertice()}{ApanhaVertice()}}
+{\footnotesize\ttfamily void Apanha\+Vertice (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*}}]{v }\end{DoxyParamCaption})}
+
+.Mostra a antena alcançada
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{FUNCOES_8c_a65ed7c17355b1c513c9da495590640de}\label{FUNCOES_8c_a65ed7c17355b1c513c9da495590640de} 
+\index{FUNCOES.c@{FUNCOES.c}!BreadthFirstTraversalLA@{BreadthFirstTraversalLA}}
+\index{BreadthFirstTraversalLA@{BreadthFirstTraversalLA}!FUNCOES.c@{FUNCOES.c}}
+\doxysubsubsection{\texorpdfstring{BreadthFirstTraversalLA()}{BreadthFirstTraversalLA()}}
+{\footnotesize\ttfamily bool Breadth\+First\+Traversal\+LA (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGraph}{Graph}} \texorpdfstring{$\ast$}{*}}]{g,  }\item[{int}]{linhan,  }\item[{int}]{colunan }\end{DoxyParamCaption})}
+
+.Procura em largura
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & \\
+\hline
+{\em linhan} & \\
+\hline
+{\em colunan} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{FUNCOES_8c_a28f2ab5289cbd986d181af34d039a3ca}\label{FUNCOES_8c_a28f2ab5289cbd986d181af34d039a3ca} 
+\index{FUNCOES.c@{FUNCOES.c}!CalcularInterferenciasAB@{CalcularInterferenciasAB}}
+\index{CalcularInterferenciasAB@{CalcularInterferenciasAB}!FUNCOES.c@{FUNCOES.c}}
+\doxysubsubsection{\texorpdfstring{CalcularInterferenciasAB()}{CalcularInterferenciasAB()}}
+{\footnotesize\ttfamily void Calcular\+Interferencias\+AB (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGraph}{Graph}} \texorpdfstring{$\ast$}{*}}]{grafo,  }\item[{char}]{freqA,  }\item[{char}]{freqB }\end{DoxyParamCaption})}
+
+.Calcula interferencia entre duas antenas.
+
+
+\begin{DoxyParams}{Parameters}
+{\em grafo} & \\
+\hline
+{\em freqA} & \\
+\hline
+{\em freqB} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{FUNCOES_8c_acd0ef08dc995366a5180d0ea1b5a2e37}\label{FUNCOES_8c_acd0ef08dc995366a5180d0ea1b5a2e37} 
+\index{FUNCOES.c@{FUNCOES.c}!CarregarAntenasDoFicheiro@{CarregarAntenasDoFicheiro}}
+\index{CarregarAntenasDoFicheiro@{CarregarAntenasDoFicheiro}!FUNCOES.c@{FUNCOES.c}}
+\doxysubsubsection{\texorpdfstring{CarregarAntenasDoFicheiro()}{CarregarAntenasDoFicheiro()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*} Carregar\+Antenas\+Do\+Ficheiro (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{nome\+\_\+ficheiro }\end{DoxyParamCaption})}
+
+.Carregar antenas do ficheiro txt
+
+
+\begin{DoxyParams}{Parameters}
+{\em nome\+\_\+ficheiro} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{FUNCOES_8c_a9954d414e2b3e9f65807b0dd5930fb40}\label{FUNCOES_8c_a9954d414e2b3e9f65807b0dd5930fb40} 
+\index{FUNCOES.c@{FUNCOES.c}!ConstruirAdjacencias@{ConstruirAdjacencias}}
+\index{ConstruirAdjacencias@{ConstruirAdjacencias}!FUNCOES.c@{FUNCOES.c}}
+\doxysubsubsection{\texorpdfstring{ConstruirAdjacencias()}{ConstruirAdjacencias()}}
+{\footnotesize\ttfamily bool Construir\+Adjacencias (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*}}]{lista }\end{DoxyParamCaption})}
+
+.Configura a adjacencia de cada vertice, colocando apenas frequencias iguais.
+
+
+\begin{DoxyParams}{Parameters}
+{\em lista} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{FUNCOES_8c_ad367dd6d205862329a259bd03d04bf6f}\label{FUNCOES_8c_ad367dd6d205862329a259bd03d04bf6f} 
+\index{FUNCOES.c@{FUNCOES.c}!ConstruirAdjacenciasTodas@{ConstruirAdjacenciasTodas}}
+\index{ConstruirAdjacenciasTodas@{ConstruirAdjacenciasTodas}!FUNCOES.c@{FUNCOES.c}}
+\doxysubsubsection{\texorpdfstring{ConstruirAdjacenciasTodas()}{ConstruirAdjacenciasTodas()}}
+{\footnotesize\ttfamily bool Construir\+Adjacencias\+Todas (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*}}]{lista }\end{DoxyParamCaption})}
+
+.Configura a adjacencia de cada vertice, grafo total.
+
+
+\begin{DoxyParams}{Parameters}
+{\em lista} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{FUNCOES_8c_aa0485896a86041d67e72a7c584c7bf25}\label{FUNCOES_8c_aa0485896a86041d67e72a7c584c7bf25} 
+\index{FUNCOES.c@{FUNCOES.c}!CriaAdj@{CriaAdj}}
+\index{CriaAdj@{CriaAdj}!FUNCOES.c@{FUNCOES.c}}
+\doxysubsubsection{\texorpdfstring{CriaAdj()}{CriaAdj()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structADJ}{ADJ}} \texorpdfstring{$\ast$}{*} Cria\+Adj (\begin{DoxyParamCaption}\item[{char}]{frequencia,  }\item[{int}]{linha,  }\item[{int}]{coluna }\end{DoxyParamCaption})}
+
+.Criar Adjacencia
+
+
+\begin{DoxyParams}{Parameters}
+{\em frequencia} & \\
+\hline
+{\em linha} & \\
+\hline
+{\em coluna} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{FUNCOES_8c_a26004b979ab4dc58f1d9ef06781bc3b9}\label{FUNCOES_8c_a26004b979ab4dc58f1d9ef06781bc3b9} 
+\index{FUNCOES.c@{FUNCOES.c}!CriaGraph@{CriaGraph}}
+\index{CriaGraph@{CriaGraph}!FUNCOES.c@{FUNCOES.c}}
+\doxysubsubsection{\texorpdfstring{CriaGraph()}{CriaGraph()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structGraph}{Graph}} \texorpdfstring{$\ast$}{*} Cria\+Graph (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+.Cria o Grafo
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{FUNCOES_8c_a3f7b7bd792e6c29587eb3d6c70d80f83}\label{FUNCOES_8c_a3f7b7bd792e6c29587eb3d6c70d80f83} 
+\index{FUNCOES.c@{FUNCOES.c}!CriarVertice@{CriarVertice}}
+\index{CriarVertice@{CriarVertice}!FUNCOES.c@{FUNCOES.c}}
+\doxysubsubsection{\texorpdfstring{CriarVertice()}{CriarVertice()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*} Criar\+Vertice (\begin{DoxyParamCaption}\item[{char}]{frequencia,  }\item[{int}]{linha,  }\item[{int}]{coluna }\end{DoxyParamCaption})}
+
+.Criar\+Vertice
+
+
+\begin{DoxyParams}{Parameters}
+{\em frequencia} & \\
+\hline
+{\em linha} & \\
+\hline
+{\em coluna} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{FUNCOES_8c_abd242153b6ecbd6b50d3c3f46a7d6657}\label{FUNCOES_8c_abd242153b6ecbd6b50d3c3f46a7d6657} 
+\index{FUNCOES.c@{FUNCOES.c}!DepthFirstTraversal@{DepthFirstTraversal}}
+\index{DepthFirstTraversal@{DepthFirstTraversal}!FUNCOES.c@{FUNCOES.c}}
+\doxysubsubsection{\texorpdfstring{DepthFirstTraversal()}{DepthFirstTraversal()}}
+{\footnotesize\ttfamily bool Depth\+First\+Traversal (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGraph}{Graph}} \texorpdfstring{$\ast$}{*}}]{g,  }\item[{int}]{lin\+Origem,  }\item[{int}]{col\+Origem }\end{DoxyParamCaption})}
+
+.Realiza uma travessia em profundidade (DFS) no grafo a partir de um vértice inicial
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & \\
+\hline
+{\em lin\+Origem} & \\
+\hline
+{\em col\+Origem} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{FUNCOES_8c_a4fbdcb09b18b348a84aa68ca6d17b3e4}\label{FUNCOES_8c_a4fbdcb09b18b348a84aa68ca6d17b3e4} 
+\index{FUNCOES.c@{FUNCOES.c}!ElimiminaAdj@{ElimiminaAdj}}
+\index{ElimiminaAdj@{ElimiminaAdj}!FUNCOES.c@{FUNCOES.c}}
+\doxysubsubsection{\texorpdfstring{ElimiminaAdj()}{ElimiminaAdj()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structADJ}{ADJ}} \texorpdfstring{$\ast$}{*} Elimimina\+Adj (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structADJ}{ADJ}} \texorpdfstring{$\ast$}{*}}]{List\+Adj,  }\item[{int}]{l,  }\item[{int}]{c,  }\item[{bool \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+.Apaga adjacencia na Lista de Adjacencias
+
+
+\begin{DoxyParams}{Parameters}
+{\em List\+Adj} & \\
+\hline
+{\em l} & \\
+\hline
+{\em c} & \\
+\hline
+{\em res} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{FUNCOES_8c_ae74ba8b7ab2afbdab5aeb86d2df3d725}\label{FUNCOES_8c_ae74ba8b7ab2afbdab5aeb86d2df3d725} 
+\index{FUNCOES.c@{FUNCOES.c}!ElimiminaAllAdj@{ElimiminaAllAdj}}
+\index{ElimiminaAllAdj@{ElimiminaAllAdj}!FUNCOES.c@{FUNCOES.c}}
+\doxysubsubsection{\texorpdfstring{ElimiminaAllAdj()}{ElimiminaAllAdj()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structADJ}{ADJ}} \texorpdfstring{$\ast$}{*} Elimimina\+All\+Adj (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structADJ}{ADJ}} \texorpdfstring{$\ast$}{*}}]{list\+Adj,  }\item[{bool \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Apaga todas as adjacências de uma LA. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em list\+Adj} & \\
+\hline
+{\em res} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{FUNCOES_8c_a199f12e69647b0a05abf5b8f1f33ce5a}\label{FUNCOES_8c_a199f12e69647b0a05abf5b8f1f33ce5a} 
+\index{FUNCOES.c@{FUNCOES.c}!EliminaAdjGraph@{EliminaAdjGraph}}
+\index{EliminaAdjGraph@{EliminaAdjGraph}!FUNCOES.c@{FUNCOES.c}}
+\doxysubsubsection{\texorpdfstring{EliminaAdjGraph()}{EliminaAdjGraph()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structGraph}{Graph}} \texorpdfstring{$\ast$}{*} Elimina\+Adj\+Graph (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGraph}{Graph}} \texorpdfstring{$\ast$}{*}}]{g,  }\item[{int}]{linha\+Origem,  }\item[{int}]{coluna\+Origem,  }\item[{int}]{linha\+Destino,  }\item[{int}]{coluna\+Destino,  }\item[{bool \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+.Apaga adjacencia entre dois vertices
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & \\
+\hline
+{\em linha\+Origem} & \\
+\hline
+{\em coluna\+Origem} & \\
+\hline
+{\em linha\+Destino} & \\
+\hline
+{\em coluna\+Destino} & \\
+\hline
+{\em res} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{FUNCOES_8c_a26dd199298ccb2446e856b30102ae410}\label{FUNCOES_8c_a26dd199298ccb2446e856b30102ae410} 
+\index{FUNCOES.c@{FUNCOES.c}!EliminaVerticeGraph@{EliminaVerticeGraph}}
+\index{EliminaVerticeGraph@{EliminaVerticeGraph}!FUNCOES.c@{FUNCOES.c}}
+\doxysubsubsection{\texorpdfstring{EliminaVerticeGraph()}{EliminaVerticeGraph()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structGraph}{Graph}} \texorpdfstring{$\ast$}{*} Elimina\+Vertice\+Graph (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGraph}{Graph}} \texorpdfstring{$\ast$}{*}}]{g,  }\item[{int}]{linha,  }\item[{int}]{coluna,  }\item[{bool \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+
+
+Apaga vertice de um grafo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & -\/ \\
+\hline
+{\em cod\+Vertice} & -\/ \\
+\hline
+{\em res} & -\/ \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em -\/} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyDate}{Date}
+29.\+04.\+2024 
+\end{DoxyDate}
+\Hypertarget{FUNCOES_8c_a17d6177ff8193466f37a8beca3fd22a8}\label{FUNCOES_8c_a17d6177ff8193466f37a8beca3fd22a8} 
+\index{FUNCOES.c@{FUNCOES.c}!ExisteVertice@{ExisteVertice}}
+\index{ExisteVertice@{ExisteVertice}!FUNCOES.c@{FUNCOES.c}}
+\doxysubsubsection{\texorpdfstring{ExisteVertice()}{ExisteVertice()}}
+{\footnotesize\ttfamily bool Existe\+Vertice (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*}}]{inicio,  }\item[{int}]{l,  }\item[{int}]{c }\end{DoxyParamCaption})}
+
+.Verifica se o vertice existe
+
+
+\begin{DoxyParams}{Parameters}
+{\em inicio} & \\
+\hline
+{\em id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{FUNCOES_8c_a6bda5069e40944302fd60a896d2498a3}\label{FUNCOES_8c_a6bda5069e40944302fd60a896d2498a3} 
+\index{FUNCOES.c@{FUNCOES.c}!ExisteVerticeGraph@{ExisteVerticeGraph}}
+\index{ExisteVerticeGraph@{ExisteVerticeGraph}!FUNCOES.c@{FUNCOES.c}}
+\doxysubsubsection{\texorpdfstring{ExisteVerticeGraph()}{ExisteVerticeGraph()}}
+{\footnotesize\ttfamily bool Existe\+Vertice\+Graph (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGraph}{Graph}} \texorpdfstring{$\ast$}{*}}]{g,  }\item[{int}]{linha,  }\item[{int}]{coluna }\end{DoxyParamCaption})}
+
+.Verifica se determinado vertice existe num grafo
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & \\
+\hline
+{\em linha} & \\
+\hline
+{\em coluna} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{FUNCOES_8c_abe7a15bcf9eb62ab775ffd2614ef2436}\label{FUNCOES_8c_abe7a15bcf9eb62ab775ffd2614ef2436} 
+\index{FUNCOES.c@{FUNCOES.c}!GetAdjNaoVisitado@{GetAdjNaoVisitado}}
+\index{GetAdjNaoVisitado@{GetAdjNaoVisitado}!FUNCOES.c@{FUNCOES.c}}
+\doxysubsubsection{\texorpdfstring{GetAdjNaoVisitado()}{GetAdjNaoVisitado()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*} Get\+Adj\+Nao\+Visitado (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*}}]{lst\+Vertices,  }\item[{int}]{linha,  }\item[{int}]{coluna }\end{DoxyParamCaption})}
+
+.Obtém o primeiro vértice adjacente não visitado a um vértice específico
+
+
+\begin{DoxyParams}{Parameters}
+{\em lst\+Vertices} & \\
+\hline
+{\em linha} & \\
+\hline
+{\em coluna} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{FUNCOES_8c_ae0d95c84a4c4d5744a267e3be2ab8525}\label{FUNCOES_8c_ae0d95c84a4c4d5744a267e3be2ab8525} 
+\index{FUNCOES.c@{FUNCOES.c}!ImprimirCaminho@{ImprimirCaminho}}
+\index{ImprimirCaminho@{ImprimirCaminho}!FUNCOES.c@{FUNCOES.c}}
+\doxysubsubsection{\texorpdfstring{ImprimirCaminho()}{ImprimirCaminho()}}
+{\footnotesize\ttfamily void Imprimir\+Caminho (\begin{DoxyParamCaption}\item[{int \texorpdfstring{$\ast$}{*}}]{linhas,  }\item[{int \texorpdfstring{$\ast$}{*}}]{colunas,  }\item[{int}]{tamanho }\end{DoxyParamCaption})}
+
+.Imprime o caminho percorrido entre dois vértices
+
+
+\begin{DoxyParams}{Parameters}
+{\em linhas} & \\
+\hline
+{\em colunas} & \\
+\hline
+{\em tamanho} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{FUNCOES_8c_a6db71872ea7e979fd757a7146c67549a}\label{FUNCOES_8c_a6db71872ea7e979fd757a7146c67549a} 
+\index{FUNCOES.c@{FUNCOES.c}!InsereAdj@{InsereAdj}}
+\index{InsereAdj@{InsereAdj}!FUNCOES.c@{FUNCOES.c}}
+\doxysubsubsection{\texorpdfstring{InsereAdj()}{InsereAdj()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structADJ}{ADJ}} \texorpdfstring{$\ast$}{*} Insere\+Adj (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structADJ}{ADJ}} \texorpdfstring{$\ast$}{*}}]{Lista\+Adja,  }\item[{int}]{l,  }\item[{int}]{c,  }\item[{char}]{frequencia }\end{DoxyParamCaption})}
+
+.Inser na lista da adjacencia, evita duplicados pela linha e coluna
+
+
+\begin{DoxyParams}{Parameters}
+{\em Lista\+Adja} & \\
+\hline
+{\em l} & \\
+\hline
+{\em c} & \\
+\hline
+{\em frequencia} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{FUNCOES_8c_ac14ec9deef87cece7a1361cb76f1926d}\label{FUNCOES_8c_ac14ec9deef87cece7a1361cb76f1926d} 
+\index{FUNCOES.c@{FUNCOES.c}!InsereAdjGraph@{InsereAdjGraph}}
+\index{InsereAdjGraph@{InsereAdjGraph}!FUNCOES.c@{FUNCOES.c}}
+\doxysubsubsection{\texorpdfstring{InsereAdjGraph()}{InsereAdjGraph()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structGraph}{Graph}} \texorpdfstring{$\ast$}{*} Insere\+Adj\+Graph (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGraph}{Graph}} \texorpdfstring{$\ast$}{*}}]{h,  }\item[{int}]{l\+Origem,  }\item[{int}]{c\+Origem,  }\item[{int}]{l\+Destino,  }\item[{int}]{c\+Destino,  }\item[{bool \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+.Inser a adjacencia no grafo
+
+
+\begin{DoxyParams}{Parameters}
+{\em h} & \\
+\hline
+{\em l\+Origem} & \\
+\hline
+{\em c\+Origem} & \\
+\hline
+{\em l\+Destino} & \\
+\hline
+{\em c\+Destino} & \\
+\hline
+{\em res} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{FUNCOES_8c_ac1e332654122dc9f40ad2991fc484880}\label{FUNCOES_8c_ac1e332654122dc9f40ad2991fc484880} 
+\index{FUNCOES.c@{FUNCOES.c}!InsereOrdenado@{InsereOrdenado}}
+\index{InsereOrdenado@{InsereOrdenado}!FUNCOES.c@{FUNCOES.c}}
+\doxysubsubsection{\texorpdfstring{InsereOrdenado()}{InsereOrdenado()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*} Insere\+Ordenado (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*}}]{inicio,  }\item[{\mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*}}]{novo,  }\item[{bool \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+. Insere o vertice na lista ligada de forma ordenada
+
+
+\begin{DoxyParams}{Parameters}
+{\em inicio} & \\
+\hline
+{\em novo} & \\
+\hline
+{\em res} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{FUNCOES_8c_ab64cbd01e6b5a3090ad1afd7d3b89002}\label{FUNCOES_8c_ab64cbd01e6b5a3090ad1afd7d3b89002} 
+\index{FUNCOES.c@{FUNCOES.c}!InsereVerticeGraph@{InsereVerticeGraph}}
+\index{InsereVerticeGraph@{InsereVerticeGraph}!FUNCOES.c@{FUNCOES.c}}
+\doxysubsubsection{\texorpdfstring{InsereVerticeGraph()}{InsereVerticeGraph()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structGraph}{Graph}} \texorpdfstring{$\ast$}{*} Insere\+Vertice\+Graph (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGraph}{Graph}} \texorpdfstring{$\ast$}{*}}]{h,  }\item[{\mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*}}]{novo,  }\item[{bool \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+.Inser o vertice no grafo
+
+
+\begin{DoxyParams}{Parameters}
+{\em h} & \\
+\hline
+{\em novo} & \\
+\hline
+{\em res} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{FUNCOES_8c_ae9c5dae16bb2fbc3295cc71e254cb4d6}\label{FUNCOES_8c_ae9c5dae16bb2fbc3295cc71e254cb4d6} 
+\index{FUNCOES.c@{FUNCOES.c}!InserirQueue@{InserirQueue}}
+\index{InserirQueue@{InserirQueue}!FUNCOES.c@{FUNCOES.c}}
+\doxysubsubsection{\texorpdfstring{InserirQueue()}{InserirQueue()}}
+{\footnotesize\ttfamily bool Inserir\+Queue (\begin{DoxyParamCaption}\item[{int}]{fila\mbox{[}$\,$\mbox{]},  }\item[{int \texorpdfstring{$\ast$}{*}}]{fim,  }\item[{int}]{valor }\end{DoxyParamCaption})}
+
+.Mete na queue
+
+
+\begin{DoxyParams}{Parameters}
+{\em fila} & \\
+\hline
+{\em fim} & \\
+\hline
+{\em valor} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{FUNCOES_8c_a4a259bfb9bfae4d9abb66d4117cf0177}\label{FUNCOES_8c_a4a259bfb9bfae4d9abb66d4117cf0177} 
+\index{FUNCOES.c@{FUNCOES.c}!isStackEmpty@{isStackEmpty}}
+\index{isStackEmpty@{isStackEmpty}!FUNCOES.c@{FUNCOES.c}}
+\doxysubsubsection{\texorpdfstring{isStackEmpty()}{isStackEmpty()}}
+{\footnotesize\ttfamily bool is\+Stack\+Empty (\begin{DoxyParamCaption}\item[{int}]{top }\end{DoxyParamCaption})}
+
+.Vê se a stack esta vazia
+
+
+\begin{DoxyParams}{Parameters}
+{\em top} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{FUNCOES_8c_a4b53637ccedf6e29d032d83bc7b1006c}\label{FUNCOES_8c_a4b53637ccedf6e29d032d83bc7b1006c} 
+\index{FUNCOES.c@{FUNCOES.c}!LibertarVertice@{LibertarVertice}}
+\index{LibertarVertice@{LibertarVertice}!FUNCOES.c@{FUNCOES.c}}
+\doxysubsubsection{\texorpdfstring{LibertarVertice()}{LibertarVertice()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*} Libertar\+Vertice (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*}}]{lista }\end{DoxyParamCaption})}
+
+Função para libertar a memoria da lista de vértices 
+\begin{DoxyParams}{Parameters}
+{\em lista} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{FUNCOES_8c_abd69bf76d6128150f231f72ed3a2c0f7}\label{FUNCOES_8c_abd69bf76d6128150f231f72ed3a2c0f7} 
+\index{FUNCOES.c@{FUNCOES.c}!MostrarTodosCaminhosDFS@{MostrarTodosCaminhosDFS}}
+\index{MostrarTodosCaminhosDFS@{MostrarTodosCaminhosDFS}!FUNCOES.c@{FUNCOES.c}}
+\doxysubsubsection{\texorpdfstring{MostrarTodosCaminhosDFS()}{MostrarTodosCaminhosDFS()}}
+{\footnotesize\ttfamily bool Mostrar\+Todos\+Caminhos\+DFS (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGraph}{Graph}} \texorpdfstring{$\ast$}{*}}]{g,  }\item[{\mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*}}]{atual,  }\item[{\mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*}}]{destino,  }\item[{int \texorpdfstring{$\ast$}{*}}]{caminho\+Linhas,  }\item[{int \texorpdfstring{$\ast$}{*}}]{caminho\+Colunas,  }\item[{int}]{profundidade }\end{DoxyParamCaption})}
+
+.Realiza uma busca em profundidade (DFS) para encontrar todos os caminhos entre dois vértices
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & \\
+\hline
+{\em atual} & \\
+\hline
+{\em destino} & \\
+\hline
+{\em caminho\+Linhas} & \\
+\hline
+{\em caminho\+Colunas} & \\
+\hline
+{\em profundidade} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{FUNCOES_8c_ac89dc1ee0f335868ad393635700fa839}\label{FUNCOES_8c_ac89dc1ee0f335868ad393635700fa839} 
+\index{FUNCOES.c@{FUNCOES.c}!OndeEstaVerticeGraph@{OndeEstaVerticeGraph}}
+\index{OndeEstaVerticeGraph@{OndeEstaVerticeGraph}!FUNCOES.c@{FUNCOES.c}}
+\doxysubsubsection{\texorpdfstring{OndeEstaVerticeGraph()}{OndeEstaVerticeGraph()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*} Onde\+Esta\+Vertice\+Graph (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGraph}{Graph}} \texorpdfstring{$\ast$}{*}}]{g,  }\item[{int}]{linha,  }\item[{int}]{coluna }\end{DoxyParamCaption})}
+
+.Procura determinado vertice num grafo. Devolve o vertice, caso exista
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & \\
+\hline
+{\em linha} & \\
+\hline
+{\em coluna} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{FUNCOES_8c_a8b39501d3c9e978e73aa20e06364e3f3}\label{FUNCOES_8c_a8b39501d3c9e978e73aa20e06364e3f3} 
+\index{FUNCOES.c@{FUNCOES.c}!pop@{pop}}
+\index{pop@{pop}!FUNCOES.c@{FUNCOES.c}}
+\doxysubsubsection{\texorpdfstring{pop()}{pop()}}
+{\footnotesize\ttfamily int pop (\begin{DoxyParamCaption}\item[{int}]{stack\mbox{[}$\,$\mbox{]},  }\item[{int \texorpdfstring{$\ast$}{*}}]{top }\end{DoxyParamCaption})}
+
+.Remove e retorna o valor do topo da pilha (stack)
+
+
+\begin{DoxyParams}{Parameters}
+{\em stack} & \\
+\hline
+{\em top} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{FUNCOES_8c_ac260bd069c85cb6f527eb4aacbf89980}\label{FUNCOES_8c_ac260bd069c85cb6f527eb4aacbf89980} 
+\index{FUNCOES.c@{FUNCOES.c}!ProcurarTodosOsCaminhos@{ProcurarTodosOsCaminhos}}
+\index{ProcurarTodosOsCaminhos@{ProcurarTodosOsCaminhos}!FUNCOES.c@{FUNCOES.c}}
+\doxysubsubsection{\texorpdfstring{ProcurarTodosOsCaminhos()}{ProcurarTodosOsCaminhos()}}
+{\footnotesize\ttfamily bool Procurar\+Todos\+Os\+Caminhos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGraph}{Graph}} \texorpdfstring{$\ast$}{*}}]{g,  }\item[{int}]{lin\+Origem,  }\item[{int}]{col\+Origem,  }\item[{int}]{lin\+Destino,  }\item[{int}]{col\+Destino }\end{DoxyParamCaption})}
+
+.Procura todos os caminhos entre dois vértices em um grafo
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & \\
+\hline
+{\em lin\+Origem} & \\
+\hline
+{\em col\+Origem} & \\
+\hline
+{\em lin\+Destino} & \\
+\hline
+{\em col\+Destino} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{FUNCOES_8c_a557ff643442ae887a3b59e48c13c9a7d}\label{FUNCOES_8c_a557ff643442ae887a3b59e48c13c9a7d} 
+\index{FUNCOES.c@{FUNCOES.c}!ProcurarVertice@{ProcurarVertice}}
+\index{ProcurarVertice@{ProcurarVertice}!FUNCOES.c@{FUNCOES.c}}
+\doxysubsubsection{\texorpdfstring{ProcurarVertice()}{ProcurarVertice()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*} Procurar\+Vertice (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*}}]{h,  }\item[{int}]{l,  }\item[{int}]{c }\end{DoxyParamCaption})}
+
+.Procura o vertice
+
+
+\begin{DoxyParams}{Parameters}
+{\em h} & \\
+\hline
+{\em l} & \\
+\hline
+{\em c} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{FUNCOES_8c_ad1b2bd7a454448095fd666007183f5d3}\label{FUNCOES_8c_ad1b2bd7a454448095fd666007183f5d3} 
+\index{FUNCOES.c@{FUNCOES.c}!push@{push}}
+\index{push@{push}!FUNCOES.c@{FUNCOES.c}}
+\doxysubsubsection{\texorpdfstring{push()}{push()}}
+{\footnotesize\ttfamily bool push (\begin{DoxyParamCaption}\item[{int}]{stack\mbox{[}$\,$\mbox{]},  }\item[{int \texorpdfstring{$\ast$}{*}}]{top,  }\item[{int}]{valor }\end{DoxyParamCaption})}
+
+.Insere um valor no topo da pilha (stack)
+
+
+\begin{DoxyParams}{Parameters}
+{\em stack} & \\
+\hline
+{\em top} & \\
+\hline
+{\em valor} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{FUNCOES_8c_a0cbc4c7412847084d7f6d965d1f3be1a}\label{FUNCOES_8c_a0cbc4c7412847084d7f6d965d1f3be1a} 
+\index{FUNCOES.c@{FUNCOES.c}!RemoverAdjacenciasParaVertice@{RemoverAdjacenciasParaVertice}}
+\index{RemoverAdjacenciasParaVertice@{RemoverAdjacenciasParaVertice}!FUNCOES.c@{FUNCOES.c}}
+\doxysubsubsection{\texorpdfstring{RemoverAdjacenciasParaVertice()}{RemoverAdjacenciasParaVertice()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*} Remover\+Adjacencias\+Para\+Vertice (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*}}]{lista,  }\item[{int}]{linha,  }\item[{int}]{coluna,  }\item[{bool \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+.Remove vertice que esteja em outras adjacencias
+
+
+\begin{DoxyParams}{Parameters}
+{\em lista} & \\
+\hline
+{\em linha} & \\
+\hline
+{\em coluna} & \\
+\hline
+{\em res} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{FUNCOES_8c_a3bb7320a41039bab664edfbe21531253}\label{FUNCOES_8c_a3bb7320a41039bab664edfbe21531253} 
+\index{FUNCOES.c@{FUNCOES.c}!RemoverQueue@{RemoverQueue}}
+\index{RemoverQueue@{RemoverQueue}!FUNCOES.c@{FUNCOES.c}}
+\doxysubsubsection{\texorpdfstring{RemoverQueue()}{RemoverQueue()}}
+{\footnotesize\ttfamily int Remover\+Queue (\begin{DoxyParamCaption}\item[{int}]{fila\mbox{[}$\,$\mbox{]},  }\item[{int \texorpdfstring{$\ast$}{*}}]{inicio }\end{DoxyParamCaption})}
+
+.Remove da queue
+
+
+\begin{DoxyParams}{Parameters}
+{\em fila} & \\
+\hline
+{\em inicio} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{FUNCOES_8c_aaea34f0ff5b80c3efe14a9c588b07a2c}\label{FUNCOES_8c_aaea34f0ff5b80c3efe14a9c588b07a2c} 
+\index{FUNCOES.c@{FUNCOES.c}!RemoverVertice@{RemoverVertice}}
+\index{RemoverVertice@{RemoverVertice}!FUNCOES.c@{FUNCOES.c}}
+\doxysubsubsection{\texorpdfstring{RemoverVertice()}{RemoverVertice()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*} Remover\+Vertice (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*}}]{h,  }\item[{int}]{linha,  }\item[{int}]{coluna,  }\item[{bool \texorpdfstring{$\ast$}{*}}]{res }\end{DoxyParamCaption})}
+
+.Remover \doxylink{structVertice}{Vertice}
+
+
+\begin{DoxyParams}{Parameters}
+{\em h} & \\
+\hline
+{\em linha} & \\
+\hline
+{\em coluna} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{FUNCOES_8c_a20e08ea37c4e068e0697c30abe4a423d}\label{FUNCOES_8c_a20e08ea37c4e068e0697c30abe4a423d} 
+\index{FUNCOES.c@{FUNCOES.c}!ResetVertices@{ResetVertices}}
+\index{ResetVertices@{ResetVertices}!FUNCOES.c@{FUNCOES.c}}
+\doxysubsubsection{\texorpdfstring{ResetVertices()}{ResetVertices()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*} Reset\+Vertices (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structVertice}{Vertice}} \texorpdfstring{$\ast$}{*}}]{inicio }\end{DoxyParamCaption})}
+
+.Reseta o campo visitado dos vertices
+
+
+\begin{DoxyParams}{Parameters}
+{\em inicio} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\Hypertarget{FUNCOES_8c_a3505b1cf3629dce257e6a3f127b29f96}\label{FUNCOES_8c_a3505b1cf3629dce257e6a3f127b29f96} 
+\index{FUNCOES.c@{FUNCOES.c}!ShowGaphLA@{ShowGaphLA}}
+\index{ShowGaphLA@{ShowGaphLA}!FUNCOES.c@{FUNCOES.c}}
+\doxysubsubsection{\texorpdfstring{ShowGaphLA()}{ShowGaphLA()}}
+{\footnotesize\ttfamily void Show\+Gaph\+LA (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structGraph}{Graph}} \texorpdfstring{$\ast$}{*}}]{g }\end{DoxyParamCaption})}
+
+.Apresenta grafo
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{FUNCOES_8c_ad9f93b8b9322212f51b720525966e5fe}\label{FUNCOES_8c_ad9f93b8b9322212f51b720525966e5fe} 
+\index{FUNCOES.c@{FUNCOES.c}!VaziaQueue@{VaziaQueue}}
+\index{VaziaQueue@{VaziaQueue}!FUNCOES.c@{FUNCOES.c}}
+\doxysubsubsection{\texorpdfstring{VaziaQueue()}{VaziaQueue()}}
+{\footnotesize\ttfamily bool Vazia\+Queue (\begin{DoxyParamCaption}\item[{int}]{fim,  }\item[{int}]{inicio }\end{DoxyParamCaption})}
+
+.Verifica se a fila está vazia
+
+
+\begin{DoxyParams}{Parameters}
+{\em fim} & \\
+\hline
+{\em inicio} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
