@@ -2,7 +2,7 @@
  * \file  FUNCOES.c
  * \brief
  *
- * \author José
+ * \author Jose 
  * \date  Maio 2025
  *********************************************************************/
 #pragma once
