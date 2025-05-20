@@ -565,11 +565,12 @@ bool ExisteVerticeGraph(Graph* g, int linha, int coluna) {
 
 /**
   * @brief  Apaga vertice de um grafo
-  * @param  g         -
-  * @param  codVertice -
-  * @param  res       -
-  * @retval         -
-  * @date  29.04.2024
+  * @param  g         
+  * @param  linha
+  * @param coluna
+  * @param  res       
+  * @retval         
+  * @date  
 **/
 Graph* EliminaVerticeGraph(Graph* g, int linha, int coluna, bool* res) {
     *res = false;
