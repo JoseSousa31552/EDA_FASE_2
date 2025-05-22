@@ -79,6 +79,7 @@ int main() {
             }
             printf("\n--- Grafo Completo ---\n");
             ShowGaphLA(grafoCompleto);
+            printf(" Total de %d vertices.\n", grafoCompleto->NumeroVertices);
             break;
         }
 
@@ -93,6 +94,7 @@ int main() {
             }
             printf("\n--- Grafo da frequencia '%c' ---\n", freq);
             ShowGaphLA(grafosPorFrequencia[(unsigned char)freq]);
+            printf(" Total de %d vertices.\n", grafosPorFrequencia[(unsigned char)freq]->NumeroVertices);
             break;
         }
         case 5: {
